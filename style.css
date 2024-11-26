@@ -1,0 +1,331 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+    color: #ff6347;
+}
+
+.hero-section {
+    background: url('images/background picture.avif') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    color: #fff;
+    background-color: #ff6347;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e55340;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Popular Dishes Section */
+.popular-dishes {
+    padding: 50px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.popular-dishes h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.dishes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dish-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.dish-card:hover {
+    transform: scale(1.05);
+}
+
+.dish-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 150px; /* Set a max height to make images uniform */
+    object-fit: cover; /* Ensures the image is cropped nicely */
+    margin-bottom: 15px;
+}
+
+
+/* About Us Preview */
+.about-preview {
+    padding: 50px;
+    text-align: center;
+    background-color: #ff6347;
+    color: #fff;
+}
+
+.about-preview h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-preview p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Popular Drinks Section */
+.popular-dishes {
+    padding: 50px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.popular-dishes h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+.dishes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dish-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.dish-card:hover {
+    transform: scale(1.05);
+}
+
+.dish-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 150px; /* Set a max height to make images uniform */
+    object-fit: cover; /* Ensures the image is cropped nicely */
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.social-links a:hover {
+    color: #ff6347;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Popular Desserts Section */
+.popular-desserts {
+    padding: 50px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.popular-desserts h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.desserts-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dessert-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.dessert-card:hover {
+    transform: scale(1.05);
+}
+
+.dessert-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-section button {
+    padding: 12px 30px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #e55340;
+}
