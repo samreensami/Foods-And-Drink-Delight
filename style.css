@@ -1,11 +1,3 @@
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 /* Navbar */
 .navbar {
     display: flex;
@@ -133,8 +125,8 @@
     width: 100%;
     height: auto;
     border-radius: 8px;
-    max-height: 150px; /* Set a max height to make images uniform */
-    object-fit: cover; /* Ensures the image is cropped nicely */
+    max-height: 150px; 
+    object-fit: cover; 
     margin-bottom: 15px;
 }
 
@@ -200,8 +192,8 @@
     width: 100%;
     height: auto;
     border-radius: 8px;
-    max-height: 150px; /* Set a max height to make images uniform */
-    object-fit: cover; /* Ensures the image is cropped nicely */
+    max-height: 150px; 
+    object-fit: cover; 
     margin-bottom: 15px;
 }
 
@@ -328,4 +320,75 @@
 
 .contact-section button:hover {
     background-color: #e55340;
+}
+/* Responsive Styles */
+
+/* Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Hero Section */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+    .cta-button {
+        padding: 10px 20px;
+    }
+}
+
+/* Dishes and Desserts Section */
+@media (max-width: 768px) {
+    .dishes-container,
+    .desserts-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .dish-card,
+    .dessert-card {
+        width: 90%;
+    }
+}
+
+/* About Us Section */
+@media (max-width: 768px) {
+    .about-preview h2 {
+        font-size: 2em;
+    }
+    .about-preview p {
+        font-size: 1em;
+    }
+}
+
+/* Contact Section */
+@media (max-width: 768px) {
+    .contact-section h2 {
+        font-size: 2em;
+    }
+    .contact-section p {
+        font-size: 1em;
+    }
+    .contact-section form {
+        width: 90%;
+    }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+    .social-links a {
+        display: block;
+        margin: 5px 0;
+    }
 }
